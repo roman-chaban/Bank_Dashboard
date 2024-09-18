@@ -12,6 +12,7 @@
     padding-inline: rem(38px);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: rem(40px);
     height: rem(100px);
   }
@@ -22,6 +23,7 @@
     gap: rem(9px);
     width: calc(rem(250px) - rem(38px));
     height: 100%;
+    padding-inline-end: rem(50px);
     border-right: rem(1.5px) solid color.$color-border-light;
 
     &_image {

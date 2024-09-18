@@ -1,6 +1,12 @@
 @use '../../styles/normalize/normalize';
 @use '../../styles/variables/colors' as color;
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -10,6 +16,11 @@
 }
 
 .main {
-  background: color.$color-page-background;
+  background: color.$color-label-background;
   display: flex;
+  min-height: 100%;
+}
+
+a:focus {
+  outline: none;
 }

@@ -4,15 +4,13 @@
 
 .dashboardSidebar {
   width: 100%;
-  height: 100%;
-  max-width: percent(250px);
+  max-width: rem(250px);
   border-right: rem(1.5px) solid color.$color-border-light;
   border-top: rem(0.7px) solid color.$color-border-light;
   background: color.$color-natural-white;
-
   &__container {
     padding-inline: rem(38px);
     padding-block-start: rem(32px);
-    height: 100vh;
+    height: 100%;
   }
 }

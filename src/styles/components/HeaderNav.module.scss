@@ -4,7 +4,7 @@
 @use '../mixins/mixins' as *;
 
 .header__nav {
-  width: 75%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,4 +57,15 @@
   height: rem(50px);
   border-radius: 100%;
   background: color.$color-label-background;
+}
+
+.profile__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  width: rem(50px);
+  height: rem(50px);
+  background: color.$color-label-background;
+  border-radius: 50%;
 }

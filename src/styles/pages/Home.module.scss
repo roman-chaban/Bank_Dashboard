@@ -1,3 +1,12 @@
+@use '../../styles/variables/colors' as color;
+@use '../../styles/variables/variables' as size;
+@use '../../styles/functions/functions' as *;
+
 .home {
+  width: 100%;
   height: 100%;
+}
+
+.home__container {
+  padding: rem(18px) rem(40px);
 }

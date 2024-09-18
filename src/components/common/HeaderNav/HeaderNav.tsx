@@ -6,8 +6,7 @@ import { Input } from '@/components/ui/Input/Input';
 import { Button } from '@/components/ui/Button/Button';
 import { buttonIcons } from '@/data/buttonIcons';
 import { inputIcon } from '@/data/inputIcon';
-
-
+import { User } from 'grommet-icons';
 
 const classNames = {
   label: styles.searchLabel,
@@ -48,6 +47,9 @@ export const HeaderNav: FC = () => {
             {icon.icon}
           </Button>
         ))}
+        <div className={styles.profile__image}>
+          <User color="#8ba3cb" />
+        </div>
       </div>
     </nav>
   );
