@@ -1,0 +1,17 @@
+@use '../../styles/variables/colors' as color;
+@use '../../styles/variables/variables' as size;
+@use '../../styles/functions/functions' as *;
+
+.menu__list_item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: rem(27px);
+}
+
+.menu__list_link {
+  font-weight: 500;
+  font-size: size.$font-size-18px;
+  color: color.$color-light-gray;
+  text-decoration: none;
+}

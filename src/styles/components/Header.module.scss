@@ -1,0 +1,48 @@
+@use '../variables/colors' as color;
+@use '../variables/variables' as size;
+@use '../functions/functions' as *;
+@use '../mixins/mixins' as *;
+
+.header {
+  width: 100%;
+  border-bottom: rem(1.5px) solid color.$color-border-light;
+
+  &__container {
+    @include globalContainer;
+    padding-inline: rem(38px);
+    display: flex;
+    align-items: center;
+    gap: rem(40px);
+    height: rem(100px);
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: rem(9px);
+    width: calc(rem(250px) - rem(38px));
+    height: 100%;
+    border-right: rem(1.5px) solid color.$color-border-light;
+
+    &_image {
+      object-fit: cover;
+    }
+
+    &_dashboard {
+      font-size: size.$font-size-25px;
+      color: color.$color-dark;
+      font-weight: 900;
+      position: relative;
+
+      &::after {
+        content: '';
+        width: rem(3.5px);
+        height: rem(4px);
+        right: -5px;
+        bottom: 5px;
+        background: color.$color-dark;
+        position: absolute;
+      }
+    }
+  }
+}

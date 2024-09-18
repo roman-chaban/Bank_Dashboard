@@ -1,0 +1,60 @@
+@use '../variables/colors' as color;
+@use '../variables/variables' as size;
+@use '../functions/functions' as *;
+@use '../mixins/mixins' as *;
+
+.header__nav {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: rem(30px);
+}
+
+.overview__title {
+  color: color.$color-dark;
+  font-size: size.$font-size-28px;
+  font-weight: 600;
+}
+
+.searchLabel {
+  display: flex;
+  align-items: center;
+  gap: rem(15px);
+  border-radius: rem(40px);
+  width: 100%;
+  max-width: rem(255px);
+  height: rem(50px);
+  background: color.$color-label-background;
+  padding-inline: rem(15px);
+}
+
+.searchInput {
+  border: none;
+  background: transparent;
+  color: color.$color-input-placeholder;
+  caret-color: color.$color-input-placeholder;
+  &::placeholder {
+    color: color.$color-input-placeholder;
+    font-size: size.$font-size-15px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.header__menu_button {
+  background: transparent;
+  border: none;
+  width: rem(50px);
+  height: rem(50px);
+  border-radius: 100%;
+  background: color.$color-label-background;
+}

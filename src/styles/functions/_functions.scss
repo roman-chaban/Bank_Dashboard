@@ -1,0 +1,30 @@
+$base-font-size: 16px;
+
+@function rem($px, $base-font-size: $base-font-size) {
+  @if (type-of($px) == 'number' and $px > 0) {
+    @return $px / $base-font-size * 1rem;
+  } @else {
+    @warn "The value #{$px} is not a valid number or less than 0.";
+    @return null;
+  }
+}
+
+$container-width-px: 1440px;
+
+@function percent($px, $base-width: $container-width-px) {
+  @if (
+    type-of($px) ==
+      'number' and
+      $px >
+      0 and
+      type-of($base-width) ==
+      'number' and
+      $base-width >
+      0
+  ) {
+    @return ($px / $base-width) * 100%;
+  } @else {
+    @warn "Invalid input: either #{$px} or #{$base-width} is not a valid number or is less than or equal to 0.";
+    @return null;
+  }
+}
