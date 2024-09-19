@@ -1,0 +1,18 @@
+[
+    {
+        "cardBalance": 5.756,
+        "icon": "/images/icons/chip-card.svg",
+        "cardHolder": "John Doe",
+        "validThru": "12/25",
+        "cardNumber": "3778 **** **** 1234",
+        "payMethod": "/images/icons/pay-method.svg"
+    },
+    {
+        "cardBalance": 5.756,
+        "icon": "/images/icons/chip-card-white.svg",
+        "cardHolder": "John Doe",
+        "validThru": "12/25",
+        "cardNumber": "3778 **** **** 1234",
+        "payMethod": "/images/icons/pay-method-white.svg"
+    }
+]
