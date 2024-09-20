@@ -1,3 +1,5 @@
+import styles from '@/styles/components/DashboardMenuItem.module.scss';
+
 export interface ListItem {
   id: number;
   label: string;
@@ -14,6 +16,7 @@ export const sidebarNavigationItems: ListItems = [
     href: '',
     icon: (
       <svg
+        className={styles['sidebar__icon']}
         width="25"
         height="25"
         viewBox="0 0 25 25"
@@ -41,6 +44,7 @@ export const sidebarNavigationItems: ListItems = [
     href: '',
     icon: (
       <svg
+        className={styles['sidebar__icon']}
         width="25"
         height="25"
         viewBox="0 0 25 25"
@@ -76,6 +80,7 @@ export const sidebarNavigationItems: ListItems = [
     href: '',
     icon: (
       <svg
+        className={styles['sidebar__icon']}
         width="25"
         height="25"
         viewBox="0 0 25 25"
@@ -106,6 +111,7 @@ export const sidebarNavigationItems: ListItems = [
     href: '',
     icon: (
       <svg
+        className={styles['sidebar__icon']}
         width="25"
         height="25"
         viewBox="0 0 25 25"
@@ -156,6 +162,7 @@ export const sidebarNavigationItems: ListItems = [
     href: '',
     icon: (
       <svg
+        className={styles['sidebar__icon']}
         width="26"
         height="26"
         viewBox="0 0 26 26"
@@ -194,6 +201,7 @@ export const sidebarNavigationItems: ListItems = [
     href: '',
     icon: (
       <svg
+        className={styles['sidebar__icon']}
         width="25"
         height="25"
         viewBox="0 0 25 25"
@@ -228,6 +236,7 @@ export const sidebarNavigationItems: ListItems = [
     href: '',
     icon: (
       <svg
+        className={styles['sidebar__icon']}
         width="25"
         height="25"
         viewBox="0 0 25 25"
@@ -274,6 +283,7 @@ export const sidebarNavigationItems: ListItems = [
     href: '',
     icon: (
       <svg
+        className={styles['sidebar__icon']}
         width="25"
         height="25"
         viewBox="0 0 25 25"
@@ -316,6 +326,7 @@ export const sidebarNavigationItems: ListItems = [
     href: '',
     icon: (
       <svg
+        className={styles['sidebar__icon']}
         width="25"
         height="25"
         viewBox="0 0 25 25"

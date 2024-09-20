@@ -29,3 +29,15 @@
   border-radius: rem(25px);
   background: color.$color-natural-white;
 }
+
+@mixin responsiveForLaptop($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin responsiveForLaptopMiddle($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}

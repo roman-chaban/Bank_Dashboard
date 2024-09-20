@@ -27,7 +27,13 @@ export const TransactionListItem: FC<TransactionListItemProps> = ({
         <h3 className={styles['listItem__title']}>{listItem.title}</h3>
         <p className={styles['listItem__subtitle']}>{listItem.subtitle}</p>
       </li>
-      <span className={styles['listItem__price']}>${listItem.price}</span>
+      <span
+        className={styles['listItem__price']}
+        style={{ color: listItem.price > 0 ? '#41d4a8 ' : '#ff4b4a' }}
+      >
+        {listItem.price > 0 ? '+' : ''}
+        {listItem.price}$
+      </span>
     </div>
   );
 };

@@ -14,6 +14,8 @@ export interface CardClassNames {
   holderTitle: string;
   holder: string;
   cardNumber: string;
+  cardImage: string;
+  payImage: string;
 }
 
 interface CardProps {
@@ -36,6 +38,7 @@ export const Card: FC<CardProps> = ({ classNames, cardSettings }) => {
             width={34}
             height={34}
             loading={'lazy'}
+            className={classNames.payImage}
           />
         </div>
         <div className={classNames.cardMain}>
@@ -56,6 +59,7 @@ export const Card: FC<CardProps> = ({ classNames, cardSettings }) => {
             width={44}
             height={30}
             loading={'lazy'}
+            className={classNames.cardImage}
           />
         </div>
       </div>

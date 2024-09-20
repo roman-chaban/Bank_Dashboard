@@ -51,6 +51,9 @@
 }
 
 .header__menu_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: transparent;
   border: none;
   width: rem(50px);
@@ -68,4 +71,32 @@
   height: rem(50px);
   background: color.$color-label-background;
   border-radius: 50%;
+}
+
+@include responsiveForLaptopMiddle(rem(1250px)) {
+  .overview__title {
+    font-size: size.$font-size-22px;
+  }
+  .header__menu {
+    gap: rem(15px);
+  }
+  .header__menu_button,
+  .profile__image {
+    max-width: rem(40px);
+    max-height: rem(40px);
+  }
+  .button__icon {
+    max-width: rem(20px);
+    max-height: rem(20px);
+  }
+  .searchLabel {
+    max-height: rem(40px);
+  }
+  .search__icon {
+    max-width: rem(16px);
+    max-height: rem(16px);
+  }
+  .searchInput::placeholder {
+    font-size: size.$font-size-14px;
+  }
 }

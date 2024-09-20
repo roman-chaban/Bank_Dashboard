@@ -48,3 +48,19 @@
     }
   }
 }
+
+@include responsiveForLaptopMiddle(rem(1240px)) {
+  .header__container {
+    padding-inline: rem(20px);
+  }
+  .header__logo {
+    max-width: rem(240px);
+  }
+  .header__logo_image {
+    max-width: rem(25px);
+    max-height: rem(25px);
+  }
+  .header__logo_dashboard {
+    font-size: size.$font-size-22px;
+  }
+}

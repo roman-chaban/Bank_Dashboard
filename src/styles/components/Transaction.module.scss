@@ -26,6 +26,7 @@
   display: flex;
   flex-direction: column;
   gap: rem(15px);
+  height: 100%;
 }
 
 .listItem {
@@ -39,7 +40,7 @@
   flex-direction: column;
   gap: rem(7px);
   width: 100%;
-  max-width: rem(180px);
+  max-width: rem(170px);
 }
 
 .listItem__image {
@@ -63,4 +64,39 @@
   color: color.$color-success-price;
   font-size: size.$font-size-16px;
   font-weight: 500;
+}
+
+@include responsiveForLaptop(rem(1360px)) {
+  .transaction__list {
+    justify-content: space-between;
+    gap: 0;
+    max-height: 100%;
+  }
+  .listItem__item {
+    max-width: rem(250px);
+  }
+  .listItem {
+    gap: rem(15px);
+    justify-content: flex-start;
+  }
+  .listItem__image {
+    max-width: rem(40px);
+    max-height: rem(40px);
+  }
+  .listItem__title {
+    font-size: size.$font-size-14px;
+  }
+
+  .listItem__subtitle {
+    font-size: size.$font-size-12px;
+  }
+  .listItem__price {
+    font-size: size.$font-size-14px;
+  }
+}
+
+@include responsiveForLaptopMiddle(rem(1250px)) {
+  .transaction__title {
+    font-size: size.$font-size-20px;
+  }
 }

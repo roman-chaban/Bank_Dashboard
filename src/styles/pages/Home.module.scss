@@ -11,7 +11,13 @@
 .home__container {
   width: 100%;
   padding: rem(18px) rem(40px);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: rem(24px);
+}
+
+@include responsiveForLaptopMiddle(rem(1240px)) {
+  .home__container {
+    padding-inline: rem(20px);
+  }
 }

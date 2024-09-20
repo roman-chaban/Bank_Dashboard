@@ -9,12 +9,15 @@
   height: rem(322px);
   border-radius: rem(25px);
   background: color.$color-natural-white;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .table__container {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: rem(22px);
   padding: rem(28px) rem(30px);
 }

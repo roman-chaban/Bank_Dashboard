@@ -13,6 +13,8 @@ export const cardClassNames: CardClassNames = {
   holderTitle: styles.holder__title,
   holder: styles.holder,
   cardNumber: styles.card__number,
+  cardImage: styles.card__image,
+  payImage: styles.pay__image,
 };
 
 export const whiteCardClassNames: CardClassNames = {
@@ -27,4 +29,6 @@ export const whiteCardClassNames: CardClassNames = {
   holderTitle: styles.holder__titleWhite,
   holder: styles.holder__white,
   cardNumber: styles.card__numberWhite,
+  cardImage: styles.card__image,
+  payImage: styles.pay__image,
 };

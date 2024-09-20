@@ -41,7 +41,7 @@
   position: relative;
   left: 129px;
   top: -98px;
-} 
+}
 
 #orange__block {
   position: absolute;
@@ -65,7 +65,7 @@
   position: absolute;
   right: 10px;
 }
- 
+
 .pinkTriangle__container {
   display: flex;
   justify-content: center;
@@ -101,4 +101,10 @@
   color: color.$color-natural-white;
   font-weight: 700;
   line-height: 108%;
+}
+
+@include responsiveForLaptop(rem(1360px)) {
+  .expense__block {
+    padding-inline-start: rem(5px);
+  }
 }

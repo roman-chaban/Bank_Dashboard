@@ -1,3 +1,5 @@
+import styles from '@/styles/components/HeaderNav.module.scss';
+
 interface ButtonIcon {
   iconId: number;
   icon: JSX.Element;
@@ -8,6 +10,7 @@ export const buttonIcons: Array<ButtonIcon> = [
     iconId: 1,
     icon: (
       <svg
+        className={styles['button__icon']}
         width="25"
         height="25"
         viewBox="0 0 25 25"
@@ -36,6 +39,7 @@ export const buttonIcons: Array<ButtonIcon> = [
     iconId: 2,
     icon: (
       <svg
+        className={styles['button__icon']}
         width="25"
         height="25"
         viewBox="0 0 25 25"

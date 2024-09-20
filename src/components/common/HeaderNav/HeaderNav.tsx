@@ -48,7 +48,7 @@ export const HeaderNav: FC = () => {
           </Button>
         ))}
         <div className={styles['profile__image']}>
-          <User color="#8ba3cb" />
+          <User color="#8ba3cb" className={styles['button__icon']} />
         </div>
       </div>
     </nav>

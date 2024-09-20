@@ -12,7 +12,7 @@ export const transactionList: TransactionListItem[] = [
     icon: '/images/transaction-icons/first.svg',
     title: 'Deposit from my Card',
     subtitle: '28 January 2024',
-    price: 850,
+    price: -850,
   },
   {
     id: 2,

@@ -42,6 +42,7 @@
 .card,
 .whiteCard {
   width: 100%;
+  height: 100%;
 }
 
 .payCards {
@@ -183,4 +184,36 @@
   color: color.$color-dark;
   font-size: size.$font-size-22px;
   font-weight: 600;
+}
+
+@include responsiveForLaptop(rem(1360px)) {
+  .card__number,
+  .card__numberWhite {
+    font-size: size.$font-size-18px;
+  }
+}
+
+@include responsiveForLaptopMiddle(rem(1240px)) {
+  .card__cash,
+  .card__cashWhite {
+    font-size: size.$font-size-18px;
+  }
+  .card__number,
+  .card__numberWhite {
+    font-size: size.$font-size-16px;
+  }
+  .card__image {
+    max-width: rem(32px);
+    max-height: rem(32px);
+  }
+  .pay__image {
+    max-width: rem(28px);
+    max-height: rem(28px);
+  }
+  .cards__title {
+    font-size: size.$font-size-20px;
+  }
+  .cards__link {
+    font-size: size.$font-size-14px;
+  }
 }

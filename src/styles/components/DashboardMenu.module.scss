@@ -1,6 +1,7 @@
 @use '../../styles/variables/colors' as color;
 @use '../../styles/variables/variables' as size;
 @use '../../styles/functions/functions' as *;
+@use '../../styles/mixins/mixins' as *;
 
 .dashboard__nav {
   .dashboard__menu {
@@ -9,5 +10,11 @@
     gap: rem(42px);
     padding: 0;
     margin: 0;
+  }
+}
+
+@include responsiveForLaptopMiddle(1250px) {
+  .dashboard__nav > .dashboard__menu {
+    gap: rem(30px);
   }
 }
