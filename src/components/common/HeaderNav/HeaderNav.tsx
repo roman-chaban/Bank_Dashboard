@@ -22,9 +22,9 @@ export const HeaderNav: FC = () => {
   };
 
   return (
-    <nav className={styles.header__nav}>
-      <h3 className={styles.overview__title}>Overview</h3>
-      <div className={styles.header__menu}>
+    <nav className={styles['header__nav']}>
+      <h3 className={styles['overview__title']}>Overview</h3>
+      <div className={styles['header__menu']}>
         <Input
           inputIcon={inputIcon}
           properties={{
@@ -41,13 +41,13 @@ export const HeaderNav: FC = () => {
         {memoizedButtonIcons.map((icon) => (
           <Button
             type="button"
-            className={styles.header__menu_button}
+            className={styles['header__menu_button']}
             key={icon.iconId}
           >
             {icon.icon}
           </Button>
         ))}
-        <div className={styles.profile__image}>
+        <div className={styles['profile__image']}>
           <User color="#8ba3cb" />
         </div>
       </div>

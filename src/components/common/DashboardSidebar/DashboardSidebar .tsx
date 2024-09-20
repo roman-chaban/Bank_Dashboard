@@ -6,8 +6,8 @@ interface DashboardSidebarProps {}
 
 export const DashboardSidebar: FC<DashboardSidebarProps> = () => {
   return (
-    <aside className={styles.dashboardSidebar}>
-      <div className={styles.dashboardSidebar__container}>
+    <aside className={styles['dashboardSidebar']}>
+      <div className={styles['dashboardSidebar__container']}>
         <DashboardMenu />
       </div>
     </aside>

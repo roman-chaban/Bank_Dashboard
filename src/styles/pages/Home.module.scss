@@ -9,5 +9,9 @@
 }
 
 .home__container {
+  width: 100%;
   padding: rem(18px) rem(40px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(24px);
 }

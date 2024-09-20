@@ -8,9 +8,9 @@ interface DashboardMenuItemProps {
 
 export const DashboardMenuItem: FC<DashboardMenuItemProps> = ({ item }) => {
   return (
-    <li className={styles.menu__list_item}>
+    <li className={styles['menu__list_item']}>
       {item.icon}
-      <Link href={item.href} className={styles.menu__list_link}>
+      <Link href={item.href} className={styles['menu__list_link']}>
         {item.label}
       </Link>
     </li>

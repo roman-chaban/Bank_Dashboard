@@ -1,0 +1,104 @@
+@use '../../styles/variables/colors' as color;
+@use '../../styles/variables/variables' as size;
+@use '../../styles/functions/functions' as *;
+@use '../../styles/mixins/mixins' as *;
+
+.expense__container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
+}
+
+.expense__title {
+  @include blockTitle;
+}
+
+.expense__block {
+  @include blockContainer(rem(323px), rem(31px) rem(39px) rem(31px) rem(41px));
+}
+
+.triangle__container {
+  display: flex;
+  justify-content: center;
+  background: url('/images/triangles/purple.svg') no-repeat center center;
+  width: 100%;
+  max-width: rem(186px);
+  height: rem(130px);
+  background-size: cover;
+  position: relative;
+  left: 25px;
+}
+
+.orangeTriangle__container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: url('/images/triangles/orange.svg') no-repeat center center;
+  width: 100%;
+  max-width: rem(146px);
+  height: rem(103px);
+  background-size: cover;
+  position: relative;
+  left: 129px;
+  top: -98px;
+} 
+
+#orange__block {
+  position: absolute;
+  left: 15px;
+}
+
+.blueTriangle__container {
+  display: flex;
+  justify-content: center;
+  background: url('/images/triangles/blue.svg') no-repeat center center;
+  width: 100%;
+  max-width: rem(120px);
+  height: rem(120px);
+  background-size: cover;
+  position: relative;
+  bottom: 90px;
+  left: 117px;
+}
+
+#blue__block {
+  position: absolute;
+  right: 10px;
+}
+ 
+.pinkTriangle__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/images/triangles/pink.svg') no-repeat center center;
+  width: 100%;
+  max-width: rem(109px);
+  height: rem(190px);
+  background-size: cover;
+  position: relative;
+  bottom: 290px;
+}
+
+.content__block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: rem(2px);
+  justify-content: center;
+  height: rem(80px);
+}
+
+.content__percent {
+  font-size: size.$font-size-14px;
+  color: color.$color-natural-white;
+  font-weight: 700;
+  line-height: 108%;
+}
+
+.content__tittle {
+  font-size: size.$font-size-12px;
+  color: color.$color-natural-white;
+  font-weight: 700;
+  line-height: 108%;
+}

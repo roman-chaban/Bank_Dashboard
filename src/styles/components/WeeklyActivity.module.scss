@@ -1,0 +1,14 @@
+@use '../functions/functions' as *;
+@use '../variables/colors' as color;
+@use '../variables/variables' as size;
+@use '../mixins/mixins' as *;
+
+.weeklyActivity__container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
+}
+
+.activity__title {
+  @include blockTitle;
+}
