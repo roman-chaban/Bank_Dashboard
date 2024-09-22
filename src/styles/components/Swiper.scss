@@ -1,0 +1,43 @@
+@use '../variables/colors' as color;
+
+.swiper {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.swiper-button-prev {
+  display: none;
+}
+
+.swiper-button-next {
+  border-radius: 100%;
+  background: color.$color-natural-white;
+  width: 40px;
+  height: 40px;
+  box-shadow: 4px 4px 18px -2px color.$color-swiper-button-shadow;
+}
+
+.swiper-button-next {
+  right: 5px;
+  &::after {
+    display: none;
+  }
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.swiper-button-next::before {
+  background-image: url('/images/icons/arrow-right.svg') !important;
+}
+
+.swiper-slide {
+  width: 75px !important;
+  margin-inline-end: 15px !important;
+}

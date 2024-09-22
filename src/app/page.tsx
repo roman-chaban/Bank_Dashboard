@@ -1,6 +1,7 @@
 import { Cards } from '@/components/cards/Cards';
 import { SubSectionContainer } from '@/components/containers/subSectionContainer';
 import { Transaction } from '@/components/transaction/Transaction';
+import { Transfer } from '@/components/transfer/Transfer';
 import { Expense } from '@/components/weekly/Expense';
 import { WeeklyActivity } from '@/components/weekly/WeeklyActivity';
 import { inter } from '@/fonts/fonts';
@@ -17,6 +18,9 @@ export default function Home() {
         <SubSectionContainer>
           <WeeklyActivity />
           <Expense />
+        </SubSectionContainer>
+        <SubSectionContainer>
+          <Transfer />
         </SubSectionContainer>
       </div>
     </section>
