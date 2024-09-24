@@ -1,17 +1,18 @@
 'use client';
 
-import type { FC, ReactNode } from 'react';
 import styled from 'styled-components';
 
-const SubSectionContainerStyle = styled.div`
+interface SubSectionContainerProps {
+  $leftFraction?: string;
+  $rightFraction?: string;
+}
+
+export const SubSectionContainer = styled.div<SubSectionContainerProps>`
   width: 100%;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: ${({
+    $leftFraction = '2fr',
+    $rightFraction = '1fr',
+  }) => `${$leftFraction} ${$rightFraction}`};
   gap: 30px;
 `;
-
-export const SubSectionContainer: FC<{ children: ReactNode }> = ({
-  children,
-}) => {
-  return <SubSectionContainerStyle>{children}</SubSectionContainerStyle>;
-};

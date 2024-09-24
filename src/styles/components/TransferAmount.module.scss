@@ -1,0 +1,69 @@
+@use '../../styles/variables/colors' as color;
+@use '../../styles/variables/variables' as size;
+@use '../../styles/functions/functions' as *;
+@use '../../styles/mixins/mixins' as *;
+
+.transfer__amount {
+  &--container {
+    padding-inline: rem(15px);
+    display: flex;
+    align-items: center;
+    gap: rem(20px);
+  }
+}
+
+.amount__title {
+  width: 100%;
+  max-width: rem(103px);
+  font-size: size.$font-size-16px;
+  font-weight: 400;
+  color: color.$color-balance-card;
+}
+
+.amount__block {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.amount__label {
+  width: 100%;
+}
+
+.amount__input {
+  border-radius: rem(50px);
+  width: 100%;
+  max-width: rem(265px);
+  height: rem(50px);
+  background: color.$color-input-background;
+  border: none;
+  padding: rem(13px) 0 rem(12px) rem(15px);
+  color: color.$color-balance-card;
+  caret-color: color.$color-balance-card;
+  font-size: size.$font-size-16px;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    font-size: size.$font-size-16px;
+    color: color.$color-balance-card;
+  }
+}
+
+.sign__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(10px);
+  width: 100%;
+  max-width: rem(100px);
+  position: absolute;
+  right: 0;
+  height: 100%;
+  border: none;
+  border-radius: rem(50px);
+  background: color.$color-button-background;
+  color: color.$color-natural-white;
+  font-weight: 500;
+  font-size: size.$font-size-16px;
+}

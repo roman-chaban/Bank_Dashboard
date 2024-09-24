@@ -1,3 +1,4 @@
+import { Balance } from '@/components/balance/Balance';
 import { Cards } from '@/components/cards/Cards';
 import { SubSectionContainer } from '@/components/containers/subSectionContainer';
 import { Transaction } from '@/components/transaction/Transaction';
@@ -19,8 +20,9 @@ export default function Home() {
           <WeeklyActivity />
           <Expense />
         </SubSectionContainer>
-        <SubSectionContainer>
+        <SubSectionContainer $leftFraction="1.2fr" $rightFraction="1.8fr">
           <Transfer />
+          <Balance />
         </SubSectionContainer>
       </div>
     </section>

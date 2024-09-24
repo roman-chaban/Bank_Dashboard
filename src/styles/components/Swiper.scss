@@ -1,8 +1,13 @@
 @use '../variables/colors' as color;
+@use '../functions/functions' as *;
 
 .swiper {
   width: 100%;
   margin: 0 !important;
+}
+
+.swiper-wrapper {
+  padding-inline-start: rem(10px) !important;
 }
 
 .swiper-button-prev {
@@ -12,21 +17,21 @@
 .swiper-button-next {
   border-radius: 100%;
   background: color.$color-natural-white;
-  width: 40px;
-  height: 40px;
+  width: rem(40px);
+  height: rem(40px);
   box-shadow: 4px 4px 18px -2px color.$color-swiper-button-shadow;
 }
 
 .swiper-button-next {
-  right: 5px;
+  right: rem(5px);
   &::after {
     display: none;
   }
   &::before {
     content: '';
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: rem(12px);
+    height: rem(12px);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -38,6 +43,6 @@
 }
 
 .swiper-slide {
-  width: 75px !important;
-  margin-inline-end: 15px !important;
+  width: rem(75px) !important;
+  margin-inline-end: rem(38px) !important;
 }
